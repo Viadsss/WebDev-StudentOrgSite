@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/imgs/chess-logo-icon.png">
+    <style>
+        header {
+            position:fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color:white;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            z-index: 10;
+        }
+        nav {
+            display: flex;
+            padding-right: 100px;
+            padding-left: 100px;
+            padding-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        nav ul li {
+            display: inline;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        header a, footer a {
+            color: white;
+            text-decoration: none;
+        }
+        main section {
+            max-width: 1100;
+            margin-left: 200px;
+            padding-bottom: 50px;
+        }
+        main section p {
+            font-weight: 800;
+            font-size: 1.0rem;
+            padding-left: 5px;
+        }
+        main section input{
+            display: flex;
+            flex-wrap: wrap;
+            width: 510px;
+            font-size: 1.0rem;
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rgb(247, 246, 246);
+        }
+    </style>
+</head>
+<body style="font-family: 'Open Sans'; background-color: black;">
+    <header style="background-color: #202020; height: 60px">
+        <div style="display: flex; padding: 50px; margin-top: 8px;">
+            <img src="assets/imgs/chess-logo-icon.png" alt="page logo icon" width="100" height="100">
+            <div style="padding-left: 10px">
+                <P style="margin-bottom: 0%">Polytechnic University of the Philippines</P>
+                <h1 style="font-weight: 1000; margin-top: 0%">CHESS CLUB</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="padding-top: 64px; 
+                color: white; 
+                background-image: url('assets/imgs/registration-bg.png'); 
+                background-size: cover; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                height: 100vh;">
+        <h1 style="color: #e0a642; font-style: 1000; font-size: 3.5rem; text-align: center; margin-top: 60px;">Register Now!</h1>
+        <p style="max-width: 1100px; margin-left: 200px; text-indent: 50px; padding-bottom: 30px;">Join the <strong>PUP Chess Club</strong> and sharpen your strategic skills! Follow the steps below to complete your application and become part of our community of thinkers and tacticians.</p>
+    
+        <section>
+            <p>First Name</p>
+            <input type="text" placeholder="Enter First name (Ex. Juan)"/>
+            
+            <p>Middle Name (NOT MIDDLE INITIAL) <i>if applicable</i></p>
+            <input type="text" placeholder="Enter Middle name (Ex. Santos)"/>
+            
+            <p>Last Name</p>
+            <input type="text" placeholder="Enter Last name (Ex. Dela Cruz)"/>
+            
+            <p>Student Number</p>
+            <input type="text" placeholder="Enter Student Number (Ex. 20XX-XXXXX-MN-0)"/>
+            
+            <p>Contact Number</p>
+            <input type="text" placeholder="Enter Contact Number (Ex. 09XX XXX XXXX)"/>
+
+        </section>
+
+        <a
+                href="/form-submitted.html"
+                style="
+                color: black;
+                background-color: #e0a642;
+                align-self: flex-start;
+                padding: 10px 15px;
+                border-radius: 8px;
+                margin-left: 200px;
+                margin-top: 20px;
+                font-weight: 800;
+                text-decoration: none;
+                font-size: 1.3rem;
+                "
+                >Submit
+        </a>
+        <br>
+        <br>
+        <br>
+    </main>
+</body>
+</html>
