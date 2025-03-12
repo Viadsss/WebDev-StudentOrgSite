@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home | PUP Chess Club</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+        * {
+            margin: 0;
+        }
+
+        .event__card {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            background-color: #151313;
+            padding: 12px 8px;
+            border-radius: 8px;
+            max-width: 65ch;
+        }
+
+        .faq__card {
+            max-width: 65ch;
+            background-color: white;
+            padding: 16px;
+            border-radius: 8px;
+            color: black;
+        }
+    </style>
+    <body
+        style="font-family: 'Open Sans'; color: white; background-color: black"
+    >
+        <header style="height: 64px">
+            <p>Header here</p>
+        </header>
+        <main>
+            <!-- Hero Section -->
+            <section
+                style="
+                    height: calc(100vh - 64px);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 48px;
+                "
+            >
+                <h1 style="font-size: 80px">PUP Chess Club</h1>
+                <p style="color: #e0a642">
+                    <i>Strategize. Compete. Improve.</i>
+                </p>
+                <p
+                    style="
+                        margin: 32px;
+                        max-width: 65ch;
+                        text-align: center;
+                        font-size: 24px;
+                    "
+                >
+                    The <strong>PUP Chess Club</strong> is a community for
+                    students who are passionate about chess. Whether you're a
+                    beginner or an experienced player, we provide a space to
+                    learn, play, and compete.
+                </p>
+                <a href="#about">
+                    <img
+                        src="assets/svgs/chevrons-down.svg"
+                        width="48"
+                        height="48"
+                    />
+                </a>
+            </section>
+
+            <!-- About Us Section -->
+            <section
+                id="about"
+                style="
+                    background-color: #e0a642;
+                    padding: 48px 32px;
+                    color: black;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 32px;
+                "
+            >
+                <div
+                    style="
+                        flex: 1;
+                        display: flex;
+                        justify-content: flex-end;
+                        text-align: center;
+                    "
+                >
+                    <img
+                        src="https://picsum.photos/400/400"
+                        style="background-color: #151313; padding: 32px"
+                    />
+                </div>
+                <div
+                    style="
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                    "
+                >
+                    <p style="margin: 16px 0">About Us--</p>
+                    <h3 style="font-size: 32px; margin-bottom: 16px">
+                        Think. Plan. Win.
+                    </h3>
+                    <p style="max-width: 65ch; margin-bottom: 24px">
+                        We promote chess as a way to develop strategic thinking,
+                        patience, and problem-solving skills. Our club organizes
+                        tournaments, training sessions, and friendly matches for
+                        PUP students.
+                    </p>
+                    <a
+                        href="/about.html"
+                        style="
+                            color: white;
+                            background-color: #151313;
+                            align-self: flex-start;
+                            padding: 8px 12px;
+                            border-radius: 8px;
+                        "
+                        >Learn More</a
+                    >
+                </div>
+            </section>
+
+            <!-- Events Section -->
+            <section style="padding: 48px 32px">
+                <div
+                    style="
+                        background-color: black;
+                        color: white;
+                        display: flex;
+                        justify-content: center;
+                        gap: 48px;
+                    "
+                >
+                    <div
+                        style="
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: end;
+                            justify-content: center;
+                        "
+                    >
+                        <div>
+                            <h2
+                                style="
+                                    font-size: 32px;
+                                    text-align: center;
+                                    margin-bottom: 16px;
+                                "
+                            >
+                                Events We've Organized
+                            </h2>
+                            <img
+                                src="https://picsum.photos/500/300"
+                                alt="Event Image"
+                                style="border-radius: 8px; max-width: 100%"
+                            />
+                            <div style="text-align: center">
+                                <img
+                                    src="assets/svgs/chevron-left.svg"
+                                    width="32"
+                                    height="32"
+                                />
+                                <img
+                                    src="assets/svgs/chevron-right.svg"
+                                    width="32"
+                                    height="32"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Event List -->
+                    <div
+                        style="
+                            flex: 1;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 24px;
+                        "
+                    >
+                        <!-- Event 1 -->
+                        <div class="event__card">
+                            <div>
+                                <h3>♟️ Annual Chess Tournament</h3>
+                                <p>
+                                    Our biggest event of the year! Students from
+                                    different colleges competed in an intense,
+                                    strategic battle to claim the championship
+                                    title.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 1 -->
+                        <div class="event__card">
+                            <div>
+                                <h3>🏆 Inter-University Chess Meetup</h3>
+                                <p>
+                                    We hosted a friendly yet competitive chess
+                                    meetup, bringing together players from
+                                    different universities to exchange
+                                    strategies and skills.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Event 3 -->
+                        <div class="event__card">
+                            <div>
+                                <h3>📖 Strategy & Tactics Workshop</h3>
+                                <p>
+                                    A learning session where experienced players
+                                    and chess masters guided members through
+                                    advanced strategies, opening theory, and
+                                    endgame tactics.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    style="
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 32px;
+                    "
+                >
+                    <a
+                        href="/events.html"
+                        style="
+                            background-color: #e0a642;
+                            color: black;
+                            padding: 8px 12px;
+                            border-radius: 8px;
+                        "
+                        >See All Events</a
+                    >
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section
+                style="
+                    background-color: #e0a642;
+                    padding: 48px 32px;
+                    color: black;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 24px;
+                    text-align: center;
+                "
+            >
+                <h2 style="font-size: 32px; margin-bottom: 16px">FAQs</h2>
+
+                <div class="faq__card">
+                    <h3>♟️ How to join?</h3>
+                    <p>
+                        To join the PUP Chess Club, simply visit our club
+                        registration booth during recruitment week or contact us
+                        through our official social media pages.
+                    </p>
+                </div>
+
+                <div class="faq__card">
+                    <h3>🏆 What is the PUP Chess Club?</h3>
+                    <p>
+                        The PUP Chess Club is a student organization dedicated
+                        to promoting chess as a sport and a tool for strategic
+                        thinking and intellectual growth.
+                    </p>
+                </div>
+
+                <div class="faq__card">
+                    <h3>🎓 Who can join the Chess Club?</h3>
+                    <p>
+                        Any PUP student, whether a beginner or an experienced
+                        player, is welcome to join the club and participate in
+                        our activities.
+                    </p>
+                </div>
+
+                <div class="faq__card">
+                    <h3>
+                        📩 For partnerships and sponsorships, who can I contact?
+                    </h3>
+                    <p>
+                        For sponsorships and collaborations, please reach out to
+                        us via our official email or message us on our social
+                        media pages.
+                    </p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
