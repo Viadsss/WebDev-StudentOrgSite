@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | PUP Chess Club</title>
+    <link rel="icon" href="/assets/imgs/chess-logo-icon.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+    />
+    <style>
+        header {
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            z-index: 10;
+        }
+        nav {
+            display: flex;
+            padding-right: 100px;
+            padding-left: 100px;
+            padding-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        nav ul li {
+            display: inline;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        header a,
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .top-card {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;
+        }
+        .card {
+            background-color: #202020;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            width: 38%;
+            height: 450px;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .card:hover {
+            background-color: #303030;
+        }
+        
+    </style>
+</head>
+<body style="font-family: 'Open Sans'; background-color: black;">
+    <header style="background-color: #202020; height: 60px">
+        <div
+            style="
+                display: flex;
+                padding: 50px;
+                margin-top: 8px;
+                align-items: center;
+            "
+        >
+            <img
+                src="assets/imgs/chess-logo-icon.png"
+                alt="page logo icon"
+                width="100"
+                height="100"
+            />
+            <div style="padding-left: 10px">
+                <p style="margin-bottom: 0%">
+                    Polytechnic University of the Philippines
+                </p>
+                <h1 style="font-weight: 1000; margin-top: 0%">
+                    CHESS CLUB
+                </h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="registration.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1 style="color: #e0a642; text-align: center; margin-top: 100px; font-size: 40px;">Events</h1>
+        <div class="top-card">
+            <div class="card">
+                <h2 style="color: #e0a642">Annual Chess Tournament</h2>
+                <p style="color: white;">Join us for our highly branticipated Annual Chess Tournament
+                    where the best minds from the Polytechnic University of the Philippines compete for
+                    the championship title. Test your skills, showcase your strategy, and enjoy the spirit
+                    of friendly competition. Open to all students, from beginners to seasoned players.</p>
+                <img src="assets/imgs/events_1.jpg" alt="event card image">
+            </div>
+            <div class="card">
+                <h2 style="color: #e0a642">Inter-University Chess Meetup</h2>
+                <p style="color: white">Connect with fellow chess enthusiasts from universities across the region! 
+                    The Inter-University Chess Meetup is a friendly gathering where players can engage in casual games, 
+                    share strategies, and build lasting connections with the broader chess community.</p>
+                <img src="assets/imgs/events_2.jpg" alt="event card image">
+            </div>
+            <div class="card">
+                <h2 style="color: #e0a642">Strategy & Tactics Workshop</h2>
+                <p style="color: white">Sharpen your game at our Strategy & Tactics Workshop! Led by experienced players
+                     and coaches, this session will cover advanced strategies, opening principles, and tactical patterns to
+                      elevate your chess skills to the next level. Open to players of all levels.</p>
+                <img src="assets/imgs/events_3.jpg" alt="event card image">
+            </div>
+            <div class="card">
+                <h2 style="color: #e0a642">Blitz Chess Challenge</h2>
+                <p style="color: white">Experience the thrill of fast-paced chess at our Blitz Chess Challenge! With a limited 
+                    time per game, this event will test your quick thinking and strategic adaptability. Open to all players looking
+                    for an exciting challenge.</p>
+                <img src="assets/imgs/events_4.jpg" alt="event card image">
+            </div>
+            <div class="card">
+                <h2 style="color: #e0a642">Chess Simul Exhibition</h2>
+                <p style="color: white">Challenge a master player in our Chess Simul Exhibition! In this event, a single experienced
+                     player will face multiple opponents simultaneously. Test your skills and see how you measure up against a seasoned
+                     competitor.</p>
+                <img src="assets/imgs/events_5.jpg" alt="event card image">
+            </div>
+            <div class="card">
+                <h2 style="color: #e0a642">Chess and Coffee Night</h2>
+                <p style="color: white">Unwind and play some casual chess at our Chess and Coffee Night. Enjoy a relaxed evening with
+                     fellow chess lovers, good conversation, and a cup of coffee. It’s the perfect setting to exchange strategies and make
+                    new friends.</p>
+                <img src="assets/imgs/events_6.jpg" alt="event card image">
+            </div>
+        </div>
+    </main>
+</body>
+</html>
