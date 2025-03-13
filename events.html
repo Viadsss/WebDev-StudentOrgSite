@@ -48,7 +48,23 @@
             color: white;
             text-decoration: none;
         }
-
+        main {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .top-card {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .card{
+            background-color: #202020;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+        }
     </style>
 </head>
 <body style="font-family: 'Open Sans'; background-color: black;">
@@ -85,5 +101,28 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+
+        <h1 style="color: #e0a642; text-align: center; margin-top: 100px">Events</h1>
+        <div class="top-card">
+            <div class="card">
+                <h2 style="color: white">Annual Chess Tournament</h2>
+                <p style="color: white">Event 1 Description</p>
+            </div>
+            <div class="card">
+                <h2 style="color: white">Inter-University Chess Meetup</h2>
+                <p style="color: white">Event 2 Description</p>
+            </div>
+            <div class="card">
+                <h2 style="color: white">Strategy & Tactics Workshop</h2>
+                <p style="color: white">Event 3 Description</p>
+            </div>
+
+        </div>
+
+        
+
+    </main>
 </body>
 </html>
