@@ -167,8 +167,14 @@
                     "
                 >
                     <img
-                        src="https://picsum.photos/400/400"
-                        style="background-color: #151313; padding: 32px"
+                        src="/assets/imgs/chess_pieces.jpg"
+                        style="
+                            background-color: #151313;
+                            padding: 32px;
+                            object-fit: cover;
+                        "
+                        width="400"
+                        height="400"
                     />
                 </div>
                 <div
@@ -193,10 +199,11 @@
                         href="/about.html"
                         style="
                             color: white;
-                            background-color: #151313;
-                            align-self: flex-start;
-                            padding: 8px 12px;
+                            background-color: black;
+                            padding: 12px 24px;
                             border-radius: 8px;
+                            text-decoration: none;
+                            width: fit-content;
                         "
                         >Learn More</a
                     >
@@ -234,21 +241,67 @@
                                 Events We've Organized
                             </h2>
                             <img
-                                src="https://picsum.photos/500/300"
+                                src="assets/imgs/chess_tournament.jpg"
                                 alt="Event Image"
-                                style="border-radius: 8px; max-width: 100%"
+                                style="
+                                    border-radius: 8px;
+                                    max-width: 100%;
+                                    object-fit: cover;
+                                "
                             />
                             <div style="text-align: center">
-                                <img
-                                    src="assets/svgs/chevron-left.svg"
-                                    width="32"
-                                    height="32"
-                                />
-                                <img
-                                    src="assets/svgs/chevron-right.svg"
-                                    width="32"
-                                    height="32"
-                                />
+                                <button
+                                    style="
+                                        background-color: #e0a642;
+                                        padding: 2px 8px;
+                                    "
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"
+                                    >
+                                        <path
+                                            stroke="none"
+                                            d="M0 0h24v24H0z"
+                                            fill="none"
+                                        />
+                                        <path d="M15 6l-6 6l6 6" />
+                                    </svg>
+                                </button>
+                                <button
+                                    style="
+                                        background-color: #e0a642;
+                                        padding: 2px 8px;
+                                    "
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="24"
+                                        height="24"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+                                    >
+                                        <path
+                                            stroke="none"
+                                            d="M0 0h24v24H0z"
+                                            fill="none"
+                                        />
+                                        <path d="M9 6l6 6l-6 6" />
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -374,6 +427,62 @@
                         us via our official email or message us on our social
                         media pages.
                     </p>
+                </div>
+            </section>
+
+            <!-- Join Us Section -->
+            <section
+                style="
+                    padding: 48px 32px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    background-color: black;
+                "
+            >
+                <h2 style="font-size: 32px; margin-bottom: 16px">
+                    Join Our Chess Community
+                </h2>
+
+                <p
+                    style="
+                        max-width: 65ch;
+                        margin-bottom: 32px;
+                        font-size: 18px;
+                    "
+                >
+                    Ready to develop your strategic thinking, meet fellow chess
+                    enthusiasts, and participate in exciting events? Join the
+                    PUP Chess Club today and be part of a growing community of
+                    chess players!
+                </p>
+
+                <div style="display: flex; gap: 16px">
+                    <a
+                        href="/registration.html"
+                        style="
+                            background-color: #e0a642;
+                            color: black;
+                            padding: 12px 24px;
+                            border-radius: 8px;
+                            font-weight: 600;
+                            text-decoration: none;
+                        "
+                        >Register Now</a
+                    >
+
+                    <a
+                        href="/about.html"
+                        style="
+                            border: 2px solid #e0a642;
+                            color: white;
+                            padding: 12px 24px;
+                            border-radius: 8px;
+                            text-decoration: none;
+                        "
+                        >I Want to Learn More</a
+                    >
                 </div>
             </section>
         </main>
