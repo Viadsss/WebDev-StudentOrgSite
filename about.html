@@ -1,297 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>About | PUP Chess Club</title>
-    <link rel="icon" href="/assets/imgs/chess-logo-icon.png" type="image/png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      header {
-        position: fixed;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: white;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 20px;
-        z-index: 10;
-      }
-      nav {
-        display: flex;
-        padding-right: 100px;
-        padding-left: 100px;
-        padding-top: 10px;
-      }
-      nav ul {
-        list-style-type: none;
-        padding: 0;
-        display: flex;
-        gap: 15px;
-        font-weight: 600;
-        font-size: 1.2rem;
-      }
-      nav ul li {
-        display: inline;
-        padding-left: 30px;
-        padding-right: 30px;
-      }
-      header a,
-      footer a {
-        color: white;
-        text-decoration: none;
-      }
-      body {
-        font-family: "Open Sans", sans-serif;
-        background-color: #000000;
-        margin: 0;
-        padding: 0;
-      }
-      main {
-        text-align: center;
-        padding: 20px;
-        background-color: #000000;
-        color: white;
-      }
-      #textdiv {
-        padding: 30px;
-        background-color: #4c4c4c;
-        border-radius: 15px;
-      }
-      #persondiv {
-        background-color: #4c4c4c;
-        padding: 20px;
-        margin-top: 50px;
-        border-radius: 15px;
-      }
-      #awardtextdiv {
-        margin-bottom: 50px;
-        background-color: #4c4c4c;
-        padding: 20px;
-        border-radius: 15px;
-      }
-      #about,
-      #mission-vision,
-      #our-team,
-      #awards {
-        display: inline-block;
-        width: 80%;
-        max-width: 800px;
-        padding: 30px;
-        border-radius: 15px;
-      }
-      h2 {
-        padding: 20px;
-        color: #e0a642;
-        font-size: 2em;
-      }
-    </style>
-  </head>
-  <body>
-    <header style="background-color: #202020; height: 60px">
-      <div style="display: flex; padding: 50px; margin-top: 8px">
-        <img
-          src="assets/imgs/chess-logo-icon.png"
-          alt="page logo icon"
-          width="100"
-          height="100"
+        <title>About | PUP Chess Club</title>
+        <link
+            rel="icon"
+            href="/assets/imgs/chess-logo-icon.png"
+            type="image/png"
         />
-        <div style="padding-left: 10px">
-          <p style="margin-bottom: 0%">
-            Polytechnic University of the Philippines
-          </p>
-          <h1 style="font-weight: 1000; margin-top: 0%">CHESS CLUB</h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+
+        <style>
+            body {
+                margin: 0;
+            }
+
+            header {
+                position: fixed;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color: white;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 20px;
+                z-index: 10;
+            }
+            nav {
+                display: flex;
+                padding-right: 100px;
+                padding-left: 100px;
+                padding-top: 10px;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                gap: 15px;
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+            nav ul li {
+                display: inline;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            header a,
+            footer a {
+                color: white;
+                text-decoration: none;
+            }
+
+            body {
+                font-family: "Open Sans", sans-serif;
+                background-color: #000000;
+                margin: 0;
+                padding: 0;
+            }
+            main {
+                text-align: center;
+                padding: 20px;
+                background-color: #000000;
+                color: white;
+            }
+            #textdiv {
+                padding: 30px;
+                background-color: #4c4c4c;
+                border-radius: 15px;
+            }
+            #persondiv {
+                background-color: #4c4c4c;
+                padding: 20px;
+                margin-top: 50px;
+                border-radius: 15px;
+            }
+            #awardtextdiv {
+                margin-bottom: 50px;
+                background-color: #4c4c4c;
+                padding: 20px;
+                border-radius: 15px;
+            }
+            #about,
+            #mission-vision,
+            #our-team,
+            #awards {
+                display: inline-block;
+                width: 80%;
+                max-width: 800px;
+                padding: 30px;
+                border-radius: 15px;
+            }
+            h2 {
+                padding: 20px;
+                color: #e0a642;
+                font-size: 2em;
+            }
+
+            footer {
+                padding: 80px 13% 70px;
+            }
+
+            .footer {
+                display: grid;
+                grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
+                gap: 1rem;
+                background: #202020;
+                margin-top: auto;
+                text-decoration: none;
+                list-style: none;
+            }
+
+            .footer-content h4 {
+                color: #fff;
+                margin-bottom: 1.5rem;
+                font-size: 20px;
+            }
+
+            .footer-content li {
+                margin-bottom: 16px;
+            }
+
+            .footer-content li a {
+                display: block;
+                color: #999;
+                font-size: 15px;
+                font-weight: 400;
+                transition: all 0.4s ease;
+            }
+
+            .footer-content li a:hover {
+                transform: translateY(-3px) translate(-5px);
+                color: #e0a642;
+            }
+
+            .icons a {
+                display: inline-block;
+                font-size: 22px;
+                color: #fff;
+                margin-right: 17px;
+                transition: all 0.4s ease;
+            }
+
+            .icons a:hover {
+                color: #e0a642;
+                transform: translateY(-5px);
+            }
+
+            .copyrightText {
+                width: 100%;
+                background: #181818;
+                padding: 8px 0;
+                text-align: center;
+                color: #999;
+            }
+
+            @media (max-width: 1024px) {
+                section {
+                    padding: 50px 8%;
+                }
+
+                .footer {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                    gap: 1rem;
+                    text-align: center;
+                }
+
+                .footer-content {
+                    text-align: center;
+                }
+
+                .footer-content h4 {
+                    font-size: 18px;
+                }
+
+                .footer-content li a {
+                    font-size: 14px;
+                }
+
+                .icons a {
+                    font-size: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header style="background-color: #202020; height: 60px">
+            <div style="display: flex; padding: 50px; margin-top: 8px">
+                <img
+                    src="assets/imgs/chess-logo-icon.png"
+                    alt="page logo icon"
+                    width="100"
+                    height="100"
+                />
+                <div style="padding-left: 10px">
+                    <p style="margin-bottom: 0%">
+                        Polytechnic University of the Philippines
+                    </p>
+                    <h1 style="font-weight: 1000; margin-top: 0%">
+                        CHESS CLUB
+                    </h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div style="height: 300px"></div>
+
+            <section id="about">
+                <h2 style="padding: 20px; color: #e0a642; font-size: 2em">
+                    About Us
+                </h2>
+
+                <div id="textdiv">
+                    <p>
+                        The <strong>PUP</strong> Chess Club is a community of
+                        passionate chess players, from beginners to advanced
+                        competitors, dedicated to improving their skills,
+                        competing in tournaments, and promoting the love of
+                        chess on campus. We provide a friendly and engaging
+                        environment where members can participate in casual
+                        games, lessons, and competitive events. Whether you're
+                        looking to learn the basics or refine your strategy, our
+                        club is the perfect place to grow as a player.
+                    </p>
+                </div>
+            </section>
+
+            <div style="height: 300px"></div>
+
+            <section id="mission-vision">
+                <h2>Our Mission</h2>
+
+                <div id="textdiv">
+                    <p>
+                        "To foster a welcoming and engaging community where
+                        students of all skill levels can develop their chess
+                        abilities, compete in tournaments, and cultivate
+                        strategic thinking, sportsmanship, and camaraderie.
+                        Through regular events, coaching, and collaboration, we
+                        aim to promote chess as a fun and intellectually
+                        enriching activity on campus."
+                    </p>
+                </div>
+
+                <h2>Our Vision</h2>
+
+                <div id="textdiv">
+                    <p>
+                        "To be a leading university chess club known for
+                        excellence in competition, inclusivity in membership,
+                        and dedication to the growth of chess culture. We
+                        envision a future where every student, regardless of
+                        experience, can find joy in the game, improve their
+                        skills, and build lifelong friendships through chess."
+                    </p>
+                </div>
+            </section>
+
+            <div style="height: 300px"></div>
+
+            <section id="our-team">
+                <h2>Our Team</h2>
+
+                <div id="persondiv">
+                    <img
+                        src="https://fastly.picsum.photos/id/99/200/200.jpg?hmac=vq3pNOfn_v1G2zEti608wHsYMUI6PYfGzCo-1WLZZ68"
+                        alt=""
+                        width="100"
+                        height="100"
+                        style="
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            border-radius: 50%;
+                        "
+                    /><br />
+                    <strong>President:</strong> Reene Steinar – Leads the club,
+                    organizes events, and represents us in university
+                    activities.<br />
+                </div>
+
+                <div id="persondiv">
+                    <img
+                        src="https://fastly.picsum.photos/id/810/200/200.jpg?hmac=h-LObTvlGPc-9CHrUTHemskWMBEOjqEWQejDQV2zvg4"
+                        alt=""
+                        width="100"
+                        height="100"
+                        style="
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            border-radius: 50%;
+                        "
+                    /><br />
+                    <strong>Vice President:</strong> Hesperos Dilşad – Assists
+                    in club management and oversees member engagement.<br />
+                </div>
+
+                <div id="persondiv">
+                    <img
+                        src="https://fastly.picsum.photos/id/572/200/200.jpg?hmac=YFsNUCQc2Dfz_5O0HY8HmDfquz04XrdcpJ0P4Z7plRY"
+                        alt=""
+                        width="100"
+                        height="100"
+                        style="
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            border-radius: 50%;
+                        "
+                    /><br />
+                    <strong>Player Lead:</strong> Fathimath Éimhín – Manages
+                    club funds, tournament fees, and sponsorships.<br />
+                </div>
+
+                <div id="persondiv">
+                    <img
+                        src="https://fastly.picsum.photos/id/802/200/200.jpg?hmac=alfo3M8Ps4XWmFJGIwuzLUqOrwxqkE5_f65vCtk6_Iw"
+                        alt=""
+                        width="100"
+                        height="100"
+                        style="
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            border-radius: 50%;
+                        "
+                    /><br />
+                    <strong>Event Coordinator:</strong> Eideard Selman – Plans
+                    internal and external chess tournaments and meetups.<br />
+                </div>
+
+                <div id="persondiv">
+                    <img
+                        src="https://fastly.picsum.photos/id/770/200/200.jpg?hmac=QFpEnsRd_HVWziMxXltLr7icjRJhyhL7vsBAwyXrotA"
+                        alt=""
+                        width="100"
+                        height="100"
+                        style="
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                            border-radius: 50%;
+                        "
+                    /><br />
+                    <strong>Coach:</strong> Zababa Aamaal – A skilled player who
+                    provides training and game analysis sessions.
+                </div>
+            </section>
+
+            <div style="height: 300px"></div>
+
+            <section id="awards">
+                <h2>Awards</h2>
+
+                <div id="awardtextdiv">
+                    <img
+                        src="https://fastly.picsum.photos/id/172/200/300.jpg?hmac=Z5LhQNM9g-UdcCGfryluTaIrxwIaAD_pMo_izKB2nuA"
+                        alt=""
+                        width="200"
+                        height="300"
+                        style="margin-top: 20px; margin-bottom: 20px"
+                    /><br />
+                    <strong>2024 University Chess Championship</strong> – 1st
+                    Place Team
+                </div>
+
+                <div id="awardtextdiv">
+                    <img
+                        src="https://fastly.picsum.photos/id/544/200/300.jpg?hmac=YL3M_fg_84Kqg0EQTvbltmjeGeQetARWPFA5YLn5hS0"
+                        alt=""
+                        width="200"
+                        height="300"
+                        style="margin-top: 20px; margin-bottom: 20px"
+                    /><br />
+                    <strong>2018 State Collegiate Chess Tournament</strong> –
+                    2nd Place
+                </div>
+
+                <div id="awardtextdiv">
+                    <img
+                        src="https://fastly.picsum.photos/id/55/200/300.jpg?hmac=VjTl-6Y6NNyUWof_G17-KlocVl0QuUoxpir1beSTl8A"
+                        alt=""
+                        width="200"
+                        height="300"
+                        style="margin-top: 20px; margin-bottom: 20px"
+                    /><br />
+                    <strong
+                        >2015 National Intercollegiate Blitz
+                        Championship</strong
+                    >
+                    – Best Individual Performance
+                </div>
+
+                <div id="awardtextdiv">
+                    <img
+                        src="https://fastly.picsum.photos/id/940/200/300.jpg?hmac=H13hOo0ZH4iX7fShH_p1dNg8gyZKXZIUNFfR74kIO7k"
+                        alt=""
+                        width="200"
+                        height="300"
+                        style="margin-top: 20px; margin-bottom: 20px"
+                    /><br />
+                    <strong>2013 Online Chess League</strong> – Runner-up
+                </div>
+            </section>
+
+            <div style="height: 300px"></div>
+        </main>
+
+        <footer class="footer">
+            <div
+                class="footer-content"
+                style="
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    flex: 1.5;
+                "
+            >
+                <div style="display: flex; align-items: center; gap: 10px">
+                    <a href="#">
+                        <img
+                            src="assets/imgs/chess-logo-icon.png"
+                            style="
+                                width: 100px;
+                                height: 100px;
+                                margin-top: -20px;
+                            "
+                        />
+                    </a>
+
+                    <div
+                        class="text"
+                        style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            color: #fff;
+                            margin-top: -20px;
+                            margin-right: 20px;
+                        "
+                    >
+                        <p1>Polytechnic University of the Philippines</p1>
+                        <h1>CHESS CLUB</h1>
+                    </div>
+                </div>
+
+                <p
+                    style="
+                        color: #999;
+                        font-size: 14px;
+                        line-height: 30px;
+                        margin: 20px 0;
+                        margin-top: 5px;
+                    "
+                >
+                    A community of passionate players dedicated to enhancing
+                    strategic thinking, fostering sportsmanship, and promoting
+                    the love of chess through competitions and training,
+                </p>
+
+                <div class="icons">
+                    <a href="https://www.facebook.com"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                    ></a>
+                    <a href="https://www.x.com"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                    ></a>
+                    <a href="https://www.instagram.com"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                    ></a>
+                    <a href="https://www.youtube.com"
+                        ><i class="fa fa-youtube-play" aria-hidden="true"></i
+                    ></a>
+                </div>
+            </div>
+
+            <div
+                class="footer-content"
+                style="margin-left: 40px; margin-right: 40px"
+            >
+                <h4>Home</h4>
+                <li><a href="#">FAQs</a></li>
+            </div>
+
+            <div class="footer-content">
+                <h4>About Us</h4>
+                <li><a href="#about">Mission</a></li>
+                <li><a href="#about">Vission</a></li>
+                <li><a href="#our-team">Team</a></li>
+                <li><a href="#awards">Awards</a></li>
+            </div>
+
+            <div class="footer-content">
+                <h4>Projects</h4>
+                <li><a href="#">Events</a></li>
+            </div>
+
+            <div class="footer-content">
+                <h4>Join Us</h4>
+                <li><a href="#">Registration</a></li>
+            </div>
+
+            <div class="footer-content" style="flex: 2; margin-left: 80px">
+                <h4>Contact Us</h4>
+                <ul class="contact" style="position: relative">
+                    <li style="display: flex; margin-bottom: 16px">
+                        <span
+                            style="
+                                color: #fff;
+                                font-size: 20px;
+                                margin-right: 10px;
+                            "
+                        >
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </span>
+                        <span style="color: #999"
+                            >A. Mabini Campus, Anonas Street,<br />
+                            Sta. Mesa Manila, Philippines 1016</span
+                        >
+                    </li>
+                    <li style="display: flex; margin-bottom: 16px">
+                        <span
+                            style="
+                                color: #fff;
+                                font-size: 20px;
+                                margin-right: 10px;
+                                padding-top: 10px;
+                            "
+                        >
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </span>
+                        <p>
+                            <a href="tel:123456789">+1 234 567 8900</a><br />
+                            <a href="tel:123456789">+1 234 567 8900</a>
+                        </p>
+                    </li>
+                    <li style="display: flex; margin-bottom: 16px">
+                        <span
+                            style="
+                                color: #fff;
+                                font-size: 20px;
+                                margin-right: 10px;
+                                padding-top: 10px;
+                            "
+                        >
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </span>
+                        <p>
+                            <a
+                                href="mailto:pupchessclub@gmail.com"
+                                style="color: #999; text-decoration: none"
+                                >pupchessclub@gmail.com</a
+                            >
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <div class="copyrightText">
+            <p>Copyright © 2025 Chess Club. All Rights Reserved.</p>
         </div>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="registration.html">Register</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <div style="height: 300px"></div>
-
-      <section id="about">
-        <h2 style="padding: 20px; color: #e0a642; font-size: 2em">About Us</h2>
-
-        <div id="textdiv">
-          <p>
-            The <strong>PUP</strong> Chess Club is a community of passionate
-            chess players, from beginners to advanced competitors, dedicated to
-            improving their skills, competing in tournaments, and promoting the
-            love of chess on campus. We provide a friendly and engaging
-            environment where members can participate in casual games, lessons,
-            and competitive events. Whether you're looking to learn the basics
-            or refine your strategy, our club is the perfect place to grow as a
-            player.
-          </p>
-        </div>
-      </section>
-
-      <div style="height: 300px"></div>
-
-      <section id="mission-vision">
-        <h2>Our Mission</h2>
-
-        <div id="textdiv">
-          <p>
-            "To foster a welcoming and engaging community where students of all
-            skill levels can develop their chess abilities, compete in
-            tournaments, and cultivate strategic thinking, sportsmanship, and
-            camaraderie. Through regular events, coaching, and collaboration, we
-            aim to promote chess as a fun and intellectually enriching activity
-            on campus."
-          </p>
-        </div>
-
-        <h2>Our Vision</h2>
-
-        <div id="textdiv">
-          <p>
-            "To be a leading university chess club known for excellence in
-            competition, inclusivity in membership, and dedication to the growth
-            of chess culture. We envision a future where every student,
-            regardless of experience, can find joy in the game, improve their
-            skills, and build lifelong friendships through chess."
-          </p>
-        </div>
-      </section>
-
-      <div style="height: 300px"></div>
-
-      <section id="our-team">
-        <h2>Our Team</h2>
-
-        <div id="persondiv">
-          <img
-            src="https://fastly.picsum.photos/id/99/200/200.jpg?hmac=vq3pNOfn_v1G2zEti608wHsYMUI6PYfGzCo-1WLZZ68"
-            alt=""
-            width="100"
-            height="100"
-            style="margin-top: 20px; margin-bottom: 20px; border-radius: 50%"
-          /><br />
-          <strong>President:</strong> Reene Steinar – Leads the club, organizes
-          events, and represents us in university activities.<br />
-        </div>
-
-        <div id="persondiv">
-          <img
-            src="https://fastly.picsum.photos/id/810/200/200.jpg?hmac=h-LObTvlGPc-9CHrUTHemskWMBEOjqEWQejDQV2zvg4"
-            alt=""
-            width="100"
-            height="100"
-            style="margin-top: 20px; margin-bottom: 20px; border-radius: 50%"
-          /><br />
-          <strong>Vice President:</strong> Hesperos Dilşad – Assists in club
-          management and oversees member engagement.<br />
-        </div>
-
-        <div id="persondiv">
-          <img
-            src="https://fastly.picsum.photos/id/572/200/200.jpg?hmac=YFsNUCQc2Dfz_5O0HY8HmDfquz04XrdcpJ0P4Z7plRY"
-            alt=""
-            width="100"
-            height="100"
-            style="margin-top: 20px; margin-bottom: 20px; border-radius: 50%"
-          /><br />
-          <strong>Player Lead:</strong> Fathimath Éimhín – Manages club funds,
-          tournament fees, and sponsorships.<br />
-        </div>
-
-        <div id="persondiv">
-          <img
-            src="https://fastly.picsum.photos/id/802/200/200.jpg?hmac=alfo3M8Ps4XWmFJGIwuzLUqOrwxqkE5_f65vCtk6_Iw"
-            alt=""
-            width="100"
-            height="100"
-            style="margin-top: 20px; margin-bottom: 20px; border-radius: 50%"
-          /><br />
-          <strong>Event Coordinator:</strong> Eideard Selman – Plans internal
-          and external chess tournaments and meetups.<br />
-        </div>
-
-        <div id="persondiv">
-          <img
-            src="https://fastly.picsum.photos/id/770/200/200.jpg?hmac=QFpEnsRd_HVWziMxXltLr7icjRJhyhL7vsBAwyXrotA"
-            alt=""
-            width="100"
-            height="100"
-            style="margin-top: 20px; margin-bottom: 20px; border-radius: 50%"
-          /><br />
-          <strong>Coach:</strong> Zababa Aamaal – A skilled player who provides
-          training and game analysis sessions.
-        </div>
-      </section>
-
-      <div style="height: 300px"></div>
-
-      <section id="awards">
-        <h2>Awards</h2>
-
-        <div id="awardtextdiv">
-          <img
-            src="https://fastly.picsum.photos/id/172/200/300.jpg?hmac=Z5LhQNM9g-UdcCGfryluTaIrxwIaAD_pMo_izKB2nuA"
-            alt=""
-            width="200"
-            height="300"
-            style="margin-top: 20px; margin-bottom: 20px"
-          /><br />
-          <strong>2024 University Chess Championship</strong> – 1st Place Team
-        </div>
-
-        <div id="awardtextdiv">
-          <img
-            src="https://fastly.picsum.photos/id/544/200/300.jpg?hmac=YL3M_fg_84Kqg0EQTvbltmjeGeQetARWPFA5YLn5hS0"
-            alt=""
-            width="200"
-            height="300"
-            style="margin-top: 20px; margin-bottom: 20px"
-          /><br />
-          <strong>2018 State Collegiate Chess Tournament</strong> – 2nd Place
-        </div>
-
-        <div id="awardtextdiv">
-          <img
-            src="https://fastly.picsum.photos/id/55/200/300.jpg?hmac=VjTl-6Y6NNyUWof_G17-KlocVl0QuUoxpir1beSTl8A"
-            alt=""
-            width="200"
-            height="300"
-            style="margin-top: 20px; margin-bottom: 20px"
-          /><br />
-          <strong>2015 National Intercollegiate Blitz Championship</strong> –
-          Best Individual Performance
-        </div>
-
-        <div id="awardtextdiv">
-          <img
-            src="https://fastly.picsum.photos/id/940/200/300.jpg?hmac=H13hOo0ZH4iX7fShH_p1dNg8gyZKXZIUNFfR74kIO7k"
-            alt=""
-            width="200"
-            height="300"
-            style="margin-top: 20px; margin-bottom: 20px"
-          /><br />
-          <strong>2013 Online Chess League</strong> – Runner-up
-        </div>
-      </section>
-
-      <div style="height: 300px"></div>
-    </main>
-
-    <footer></footer>
-    <!-- empty footer -->
-  </body>
+    </body>
 </html>
