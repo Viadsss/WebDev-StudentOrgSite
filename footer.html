@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    body{
+        height: 100vh;
+        width: 100%;
+        background: #121b25;
+    }
+
+
+    section{
+        padding: 80px 13% 70px;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
+        gap: 1rem;
+        background: #202020;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin-top: auto;
+    }
+
+    .footer-content h4{
+        color: #fff;
+        margin-bottom: 1.5rem;
+        font-size: 20px;
+    }
+
+    .footer-content li{
+        margin-bottom: 16px;
+    }
+
+    .footer-content li a{
+        display: block;
+        color: #999;
+        font-size: 15px;
+        font-weight: 400;
+        transition: all .40s ease;
+    }
+
+    .footer-content li a:hover{
+        transform: translateY(-3px) translate(-5px);
+        color:#e0a642;
+    }
+
+    .icons a{
+        display: inline-block;
+        font-size: 22px;
+        color: #fff;
+        margin-right: 17px;
+        transition: all .40s ease;
+    }
+
+    .icons a:hover{
+        color: #e0a642;
+        transform: translateY(-5px)
+
+    }
+
+    .copyrightText {
+    width: 100%;
+    background: #181818;
+    padding: 8px 0;
+    text-align: center;
+    color: #999;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    }
+
+    @media (max-width: 1024px) {
+    section {
+        padding: 50px 8%;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-content {
+        text-align: center;
+    }
+
+    .footer-content h4 {
+        font-size: 18px;
+    }
+
+    .footer-content li a {
+        font-size: 14px;
+    }
+
+    .icons a {
+        font-size: 20px;
+    }
+}
+
+
+</style>
+<body>
+        <section class="footer">
+            <div class="footer-content" 
+           
+           style="
+            display: flex; 
+            flex-direction: 
+            column; align-items: 
+            center; 
+            text-align: center;
+            flex: 1.5;">
+    
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <a href="#">
+                        <img src="assets/imgs/chess-logo-icon.png" style="width: 100px; height: 100px; margin-top: -20px;">
+                    </a>
+        
+                    <div class="text" style="display: flex; flex-direction: column; align-items: flex-start; color: #fff; margin-top: -20px;  margin-right: 20px;">
+                        <p1>Polytechnic University of the Philippines</p1>
+                        <h1>CHESS CLUB</h1>
+                    </div>
+                </div>
+    
+        
+                <p style="color:  #999; font-size: 14px; line-height: 30px; margin: 20px 0; margin-top: 5px;">
+                    A community of passionate players dedicated to
+                    enhancing strategic thinking, fostering sportsmanship, 
+                    and promoting the love of chess through competitions and training,</p>
+                
+                
+                <div class="icons">
+    
+                    <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.x.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </div>
+            </div>
+    
+            <div class="footer-content" style="margin-left: 40px; margin-right: 40px;">
+                <h4>Home</h4>
+                <li><a href="#">FAQs</a></li>
+            </div>
+    
+            <div class="footer-content" >
+                <h4>About Us</h4>
+                <li><a href="#about">Mission</a></li>
+                <li><a href="#about">Vission</a></li>
+                <li><a href="#our-team">Team</a></li>
+                <li><a href="#awards">Awards</a></li>
+            </div>
+    
+            <div class="footer-content">
+                <h4>Projects</h4>
+                <li><a href="#">Events</a></li>
+            </div>
+    
+            <div class="footer-content">
+                <h4>Join Us</h4>
+                <li><a href="#">Registration</a></li>
+            </div>
+    
+            <div class="footer-content" style="flex: 2; margin-left: 80px;">
+                <h4>Contact Us</h4>
+                <ul class="contact" style="position: relative;">
+                    <li style="display: flex; margin-bottom: 16px;">
+                        <span style="color: #fff; font-size: 20px; margin-right: 10px;">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </span>
+                        <span style="color: #999;">A. Mabini Campus, Anonas Street,<br>
+                            Sta. Mesa Manila, Philippines 1016</span>
+                    </li>
+                    <li style="display: flex; margin-bottom: 16px;">
+                        <span style="color: #fff; font-size: 20px; margin-right: 10px;">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                        </span>
+                        <p>
+                            <a href="tel:123456789">+1 234 567 8900</a><br>
+                            <a href="tel:123456789">+1 234 567 8900</a>
+                        </p>
+                    </li>
+                    <li style="display: flex; margin-bottom: 16px;">
+                        <span style="color: #fff; font-size: 20px; margin-right: 10px;">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </span>
+                        <p>
+                            <a href="mailto:pupchessclub@gmail.com" style="color: #999; text-decoration: none;">pupchessclub@gmail.com</a>
+                        </p>
+                    </li>
+                </ul>
+                
+            </div>
+       </section> 
+    <div class="copyrightText">
+        <p>Copyright © 2025 Chess Club. All Rights Reserved.</p>
+    </div>
+
+</body>
+</html>
