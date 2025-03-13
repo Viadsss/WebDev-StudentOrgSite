@@ -65,9 +65,8 @@
             padding: 20px;
             border-radius: 10px;
             margin: 10px;
-            width: 38%;
-            height: 450px;
-            overflow: auto;
+            width: 38%; 
+            height: 550px; 
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -75,14 +74,35 @@
         .card img {
             width: 100%;
             height: auto;
-            max-height: 250px;
+            max-height: 250px; 
             object-fit: cover;
             border-radius: 10px;
+            margin-top: 20px;
         }
         .card:hover {
             background-color: #303030;
         }
-        
+        .event-details {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .event-details .date,
+        .event-details .location {
+            background-color: #303030;
+            padding: 10px;
+            border-radius: 10px;
+            color: white;
+            width: 45%;
+            text-align: center;
+        }
+        .event-details .date {
+            background-color: #404040;
+        }
+        .event-details .location {
+            background-color: #505050;
+        }
     </style>
 </head>
 <body style="font-family: 'Open Sans'; background-color: black;">
@@ -126,10 +146,14 @@
         <div class="top-card">
             <div class="card">
                 <h2 style="color: #e0a642">Annual Chess Tournament</h2>
-                <p style="color: white;">Join us for our highly branticipated Annual Chess Tournament
+                <p style="color: white;">Join us for our highly anticipated Annual Chess Tournament
                     where the best minds from the Polytechnic University of the Philippines compete for
                     the championship title. Test your skills, showcase your strategy, and enjoy the spirit
-                    of friendly competition. Open to all students, from beginners to seasoned players.</p>
+                    of friendly competition.</p>
+                <div class="event-details">
+                    <div class="date">March 20, 2025</div>
+                    <div class="location">Bulwagang Balagtas, 4/F NALLRC Bldg</div>
+                </div>
                 <img src="assets/imgs/events_1.jpg" alt="event card image">
             </div>
             <div class="card">
@@ -137,6 +161,10 @@
                 <p style="color: white">Connect with fellow chess enthusiasts from universities across the region! 
                     The Inter-University Chess Meetup is a friendly gathering where players can engage in casual games, 
                     share strategies, and build lasting connections with the broader chess community.</p>
+                <div class="event-details">
+                    <div class="date">April 10, 2025</div>
+                    <div class="location">Bulwagang Balagtas, 4/F NALLRC Bldg</div>
+                </div>
                 <img src="assets/imgs/events_2.jpg" alt="event card image">
             </div>
             <div class="card">
@@ -144,6 +172,10 @@
                 <p style="color: white">Sharpen your game at our Strategy & Tactics Workshop! Led by experienced players
                      and coaches, this session will cover advanced strategies, opening principles, and tactical patterns to
                       elevate your chess skills to the next level. Open to players of all levels.</p>
+                <div class="event-details">
+                    <div class="date">May 5, 2025</div>
+                    <div class="location">Bulwagang Balagtas, 4/F NALLRC Bldg</div>
+                </div>
                 <img src="assets/imgs/events_3.jpg" alt="event card image">
             </div>
             <div class="card">
@@ -151,6 +183,10 @@
                 <p style="color: white">Experience the thrill of fast-paced chess at our Blitz Chess Challenge! With a limited 
                     time per game, this event will test your quick thinking and strategic adaptability. Open to all players looking
                     for an exciting challenge.</p>
+                <div class="event-details">
+                    <div class="date">June 15, 2025</div>
+                    <div class="location">Bulwagang Balagtas, 4/F NALLRC Bldg</div>
+                </div>
                 <img src="assets/imgs/events_4.jpg" alt="event card image">
             </div>
             <div class="card">
@@ -158,6 +194,10 @@
                 <p style="color: white">Challenge a master player in our Chess Simul Exhibition! In this event, a single experienced
                      player will face multiple opponents simultaneously. Test your skills and see how you measure up against a seasoned
                      competitor.</p>
+                <div class="event-details">
+                    <div class="date">July 25, 2025</div>
+                    <div class="location">Bulwagang Balagtas, 4/F NALLRC Bldg</div>
+                </div>
                 <img src="assets/imgs/events_5.jpg" alt="event card image">
             </div>
             <div class="card">
@@ -165,6 +205,10 @@
                 <p style="color: white">Unwind and play some casual chess at our Chess and Coffee Night. Enjoy a relaxed evening with
                      fellow chess lovers, good conversation, and a cup of coffee. It’s the perfect setting to exchange strategies and make
                     new friends.</p>
+                <div class="event-details">
+                    <div class="date">August 30, 2025</div>
+                    <div class="location">Bulwagang Balagtas, 4/F NALLRC Bldg</div>
+                </div>
                 <img src="assets/imgs/events_6.jpg" alt="event card image">
             </div>
         </div>
