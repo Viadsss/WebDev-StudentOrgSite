@@ -12,13 +12,41 @@
         />
     </head>
     <style>
-        *,
-        *::before,
-        *::after {
-            box-sizing: border-box;
+        header {
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            z-index: 10;
         }
-        * {
-            margin: 0;
+        nav {
+            display: flex;
+            padding-right: 100px;
+            padding-left: 100px;
+            padding-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        nav ul li {
+            display: inline;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        header a,
+        footer a {
+            color: white;
+            text-decoration: none;
         }
 
         .event__card {
@@ -42,22 +70,56 @@
     <body
         style="font-family: 'Open Sans'; color: white; background-color: black"
     >
-        <header style="height: 64px">
-            <p>Header here</p>
+        <header style="background-color: #202020; height: 64px">
+            <div
+                style="
+                    display: flex;
+                    padding: 50px;
+                    margin-top: 8px;
+                    align-items: center;
+                "
+            >
+                <img
+                    src="assets/imgs/chess-logo-icon.png"
+                    alt="page logo icon"
+                    width="100"
+                    height="100"
+                />
+                <div style="padding-left: 10px">
+                    <p style="margin-bottom: 0%">
+                        Polytechnic University of the Philippines
+                    </p>
+                    <h1 style="font-weight: 1000; margin-top: 0%">
+                        CHESS CLUB
+                    </h1>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="registration.html">Register</a></li>
+                </ul>
+            </nav>
         </header>
         <main>
             <!-- Hero Section -->
             <section
                 style="
-                    height: calc(100vh - 64px);
+                    height: calc(100vh - 48px);
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-                    padding-bottom: 48px;
+                    padding-top: 48px;
+                    background-image: url(assets/imgs/hero_banner.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
                 "
             >
-                <h1 style="font-size: 80px">PUP Chess Club</h1>
+                <h1 style="font-size: 80px; margin: 0">PUP Chess Club</h1>
                 <p style="color: #e0a642">
                     <i>Strategize. Compete. Improve.</i>
                 </p>
