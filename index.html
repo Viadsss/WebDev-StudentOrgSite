@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,180 +19,20 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+        <link rel="stylesheet" href="styles.css" />
     </head>
-    <style>
-        body {
-            margin: 0;
-        }
-
-        header {
-            position: fixed;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: white;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 20px;
-            z-index: 10;
-        }
-        nav {
-            display: flex;
-            padding-right: 100px;
-            padding-left: 100px;
-            padding-top: 10px;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            gap: 15px;
-            font-weight: 600;
-            font-size: 1.2rem;
-        }
-        nav ul li {
-            display: inline;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-
-        header a,
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .event__card {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            background-color: #151313;
-            padding: 12px 8px;
-            border-radius: 8px;
-            max-width: 65ch;
-        }
-
-        .faq__card {
-            max-width: 65ch;
-            background-color: white;
-            padding: 16px;
-            border-radius: 8px;
-            color: black;
-        }
-
-        footer {
-            padding: 80px 13% 70px;
-        }
-
-        .footer {
-            display: grid;
-            grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
-            gap: 1rem;
-            background: #202020;
-            margin-top: auto;
-            text-decoration: none;
-            list-style: none;
-        }
-
-        .footer-content h4 {
-            color: #fff;
-            margin-bottom: 1.5rem;
-            font-size: 20px;
-        }
-
-        .footer-content li {
-            margin-bottom: 16px;
-        }
-
-        .footer-content li a {
-            display: block;
-            color: #999;
-            font-size: 15px;
-            font-weight: 400;
-            transition: all 0.4s ease;
-        }
-
-        .footer-content li a:hover {
-            transform: translateY(-3px) translate(-5px);
-            color: #e0a642;
-        }
-
-        .icons a {
-            display: inline-block;
-            font-size: 22px;
-            color: #fff;
-            margin-right: 17px;
-            transition: all 0.4s ease;
-        }
-
-        .icons a:hover {
-            color: #e0a642;
-            transform: translateY(-5px);
-        }
-
-        .copyrightText {
-            width: 100%;
-            background: #181818;
-            padding: 8px 0;
-            text-align: center;
-            color: #999;
-        }
-
-        @media (max-width: 1024px) {
-            section {
-                padding: 50px 8%;
-            }
-
-            .footer {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 1rem;
-                text-align: center;
-            }
-
-            .footer-content {
-                text-align: center;
-            }
-
-            .footer-content h4 {
-                font-size: 18px;
-            }
-
-            .footer-content li a {
-                font-size: 14px;
-            }
-
-            .icons a {
-                font-size: 20px;
-            }
-        }
-    </style>
-    <body
-        style="font-family: 'Open Sans'; color: white; background-color: black"
-    >
-        <header style="background-color: #202020; height: 60px">
-            <div
-                style="
-                    display: flex;
-                    padding: 50px;
-                    margin-top: 8px;
-                    align-items: center;
-                "
-            >
+    <body>
+        <header id="header">
+            <div class="brand">
                 <img
                     src="assets/imgs/chess-logo-icon.png"
                     alt="page logo icon"
                     width="100"
                     height="100"
                 />
-                <div style="padding-left: 10px">
-                    <p style="margin-bottom: 0%">
-                        Polytechnic University of the Philippines
-                    </p>
-                    <h1 style="font-weight: 1000; margin-top: 0%">
-                        CHESS CLUB
-                    </h1>
+                <div class="brand__name">
+                    <p>Polytechnic University of the Philippines</p>
+                    <h1>CHESS CLUB</h1>
                 </div>
             </div>
             <nav>
@@ -206,32 +46,12 @@
         </header>
         <main>
             <!-- Hero Section -->
-            <section
-                style="
-                    height: calc(100vh - 48px);
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    padding-top: 48px;
-                    background-image: url(assets/imgs/hero_banner.jpg);
-                    background-size: cover;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                "
-            >
-                <h1 style="font-size: 80px; margin: 0">PUP Chess Club</h1>
-                <p style="color: #e0a642">
+            <section class="hero">
+                <h1>PUP Chess Club</h1>
+                <p>
                     <i>Strategize. Compete. Improve.</i>
                 </p>
-                <p
-                    style="
-                        margin: 32px;
-                        max-width: 65ch;
-                        text-align: center;
-                        font-size: 24px;
-                    "
-                >
+                <p>
                     The <strong>PUP Chess Club</strong> is a community for
                     students who are passionate about chess. Whether you're a
                     beginner or an experienced player, we provide a space to
@@ -247,176 +67,56 @@
             </section>
 
             <!-- About Us Section -->
-            <section
-                id="about"
-                style="
-                    background-color: #e0a642;
-                    padding: 48px 32px;
-                    color: black;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 32px;
-                "
-            >
-                <div
-                    style="
-                        flex: 1;
-                        display: flex;
-                        justify-content: flex-end;
-                        text-align: center;
-                    "
-                >
+            <section id="about">
+                <div class="about-left">
                     <img
                         src="assets/imgs/chess_pieces.jpg"
-                        style="
-                            background-color: #151313;
-                            padding: 32px;
-                            object-fit: cover;
-                        "
                         width="400"
                         height="400"
                     />
                 </div>
-                <div
-                    style="
-                        flex: 1;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                    "
-                >
-                    <p style="margin: 16px 0">About Us--</p>
-                    <h3 style="font-size: 32px; margin-bottom: 16px">
-                        Think. Plan. Win.
-                    </h3>
-                    <p style="max-width: 65ch; margin-bottom: 24px">
+                <div class="about-right">
+                    <p>About Us--</p>
+                    <h3>Think. Plan. Win.</h3>
+                    <p>
                         We promote chess as a way to develop strategic thinking,
                         patience, and problem-solving skills. Our club organizes
                         tournaments, training sessions, and friendly matches for
                         PUP students.
                     </p>
-                    <a
-                        href="about.html"
-                        style="
-                            color: white;
-                            background-color: black;
-                            padding: 12px 24px;
-                            border-radius: 8px;
-                            text-decoration: none;
-                            width: fit-content;
-                        "
-                        >Learn More</a
-                    >
+                    <a href="about.html">Learn More</a>
                 </div>
             </section>
 
             <!-- Events Section -->
-            <section style="padding: 48px 32px">
-                <div
-                    style="
-                        background-color: black;
-                        color: white;
-                        display: flex;
-                        justify-content: center;
-                        gap: 48px;
-                    "
-                >
-                    <div
-                        style="
-                            flex: 1;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: end;
-                            justify-content: center;
-                        "
-                    >
+            <section class="events">
+                <div class="events-top">
+                    <div class="events-left">
                         <div>
-                            <h2
-                                style="
-                                    font-size: 32px;
-                                    text-align: center;
-                                    margin-bottom: 16px;
-                                "
-                            >
-                                Events We've Organized
-                            </h2>
+                            <h2>Events We've Organized</h2>
                             <img
                                 src="assets/imgs/chess_tournament.jpg"
                                 alt="Event Image"
-                                style="
-                                    border-radius: 8px;
-                                    max-width: 100%;
-                                    object-fit: cover;
-                                "
                             />
-                            <div style="text-align: center">
-                                <button
-                                    style="
-                                        background-color: #e0a642;
-                                        padding: 2px 8px;
-                                    "
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path d="M15 6l-6 6l6 6" />
-                                    </svg>
+                            <div>
+                                <button>
+                                    <i
+                                        class="fa fa-chevron-left"
+                                        aria-hidden="true"
+                                    ></i>
                                 </button>
-                                <button
-                                    style="
-                                        background-color: #e0a642;
-                                        padding: 2px 8px;
-                                    "
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        stroke-width="2"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
-                                    >
-                                        <path
-                                            stroke="none"
-                                            d="M0 0h24v24H0z"
-                                            fill="none"
-                                        />
-                                        <path d="M9 6l6 6l-6 6" />
-                                    </svg>
+                                <button>
+                                    <i
+                                        class="fa fa-chevron-right"
+                                        aria-hidden="true"
+                                    ></i>
                                 </button>
                             </div>
                         </div>
                     </div>
 
                     <!-- Right Side: Event List -->
-                    <div
-                        style="
-                            flex: 1;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            gap: 24px;
-                        "
-                    >
+                    <div class="events-right">
                         <!-- Event 1 -->
                         <div class="event__card">
                             <div>
@@ -457,40 +157,14 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    style="
-                        display: flex;
-                        justify-content: center;
-                        margin-top: 32px;
-                    "
-                >
-                    <a
-                        href="events.html"
-                        style="
-                            background-color: #e0a642;
-                            color: black;
-                            padding: 8px 12px;
-                            border-radius: 8px;
-                        "
-                        >See All Events</a
-                    >
+                <div class="events-bottom">
+                    <a href="events.html">See All Events</a>
                 </div>
             </section>
 
             <!-- FAQ Section -->
-            <section
-                style="
-                    background-color: #e0a642;
-                    padding: 48px 32px;
-                    color: black;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    gap: 24px;
-                    text-align: center;
-                "
-            >
-                <h2 style="font-size: 32px; margin-bottom: 16px">FAQs</h2>
+            <section class="faq">
+                <h2>FAQs</h2>
 
                 <div class="faq__card">
                     <h3>♟️ How to join?</h3>
@@ -532,110 +206,41 @@
             </section>
 
             <!-- Join Us Section -->
-            <section
-                style="
-                    padding: 48px 32px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    text-align: center;
-                    background-color: black;
-                "
-            >
-                <h2 style="font-size: 32px; margin-bottom: 16px">
-                    Join Our Chess Community
-                </h2>
+            <section class="join-us">
+                <h2>Join Our Chess Community</h2>
 
-                <p
-                    style="
-                        max-width: 65ch;
-                        margin-bottom: 32px;
-                        font-size: 18px;
-                    "
-                >
+                <p>
                     Ready to develop your strategic thinking, meet fellow chess
                     enthusiasts, and participate in exciting events? Join the
                     PUP Chess Club today and be part of a growing community of
                     chess players!
                 </p>
 
-                <div style="display: flex; gap: 16px">
-                    <a
-                        href="registration.html"
-                        style="
-                            background-color: #e0a642;
-                            color: black;
-                            padding: 12px 24px;
-                            border-radius: 8px;
-                            font-weight: 600;
-                            text-decoration: none;
-                        "
-                        >Register Now</a
-                    >
+                <div class="join-us__links">
+                    <a href="registration.html">Register Now</a>
 
-                    <a
-                        href="about.html"
-                        style="
-                            border: 2px solid #e0a642;
-                            color: white;
-                            padding: 12px 24px;
-                            border-radius: 8px;
-                            text-decoration: none;
-                        "
-                        >I Want to Learn More</a
-                    >
+                    <a href="about.html">I Want to Learn More</a>
                 </div>
             </section>
         </main>
 
         <footer class="footer">
-            <div
-                class="footer-content"
-                style="
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    text-align: center;
-                    flex: 1.5;
-                "
-            >
-                <div style="display: flex; align-items: center; gap: 10px">
+            <div class="footer-content">
+                <div class="footer-brand">
                     <a href="#">
                         <img
                             src="assets/imgs/chess-logo-icon.png"
-                            style="
-                                width: 100px;
-                                height: 100px;
-                                margin-top: -20px;
-                            "
+                            class="footer-brand__logo"
                         />
                     </a>
 
-                    <div
-                        class="text"
-                        style="
-                            display: flex;
-                            flex-direction: column;
-                            align-items: flex-start;
-                            color: #fff;
-                            margin-top: -20px;
-                            margin-right: 20px;
-                        "
-                    >
+                    <div class="footer-brand__text">
                         <p1>Polytechnic University of the Philippines</p1>
                         <h1>CHESS CLUB</h1>
                     </div>
                 </div>
 
-                <p
-                    style="
-                        color: #999;
-                        font-size: 14px;
-                        line-height: 30px;
-                        margin: 20px 0;
-                        margin-top: 5px;
-                    "
-                >
+                <p class="footer-phrase">
                     A community of passionate players dedicated to enhancing
                     strategic thinking, fostering sportsmanship, and promoting
                     the love of chess through competitions and training,
@@ -658,14 +263,13 @@
             </div>
 
             <div
-                class="footer-content"
-                style="margin-left: 40px; margin-right: 40px"
+                class="footer-content footer-content-2"
             >
                 <h4>Home</h4>
                 <li><a href="#">FAQs</a></li>
             </div>
 
-            <div class="footer-content">
+            <div class="footer-content footer-content-2">
                 <h4>About Us</h4>
                 <li><a href="#about">Mission</a></li>
                 <li><a href="#about">Vission</a></li>
@@ -683,33 +287,20 @@
                 <li><a href="#">Registration</a></li>
             </div>
 
-            <div class="footer-content" style="flex: 2; margin-left: 80px">
+            <div class="footer-content footer-content-3">
                 <h4>Contact Us</h4>
-                <ul class="contact" style="position: relative">
-                    <li style="display: flex; margin-bottom: 16px">
-                        <span
-                            style="
-                                color: #fff;
-                                font-size: 20px;
-                                margin-right: 10px;
-                            "
-                        >
+                <ul>
+                    <li>
+                        <span>
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                         </span>
-                        <span style="color: #999"
+                        <span class="footer-address"
                             >A. Mabini Campus, Anonas Street,<br />
                             Sta. Mesa Manila, Philippines 1016</span
                         >
                     </li>
-                    <li style="display: flex; margin-bottom: 16px">
-                        <span
-                            style="
-                                color: #fff;
-                                font-size: 20px;
-                                margin-right: 10px;
-                                padding-top: 10px;
-                            "
-                        >
+                    <li>
+                        <span class="pt-10">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </span>
                         <p>
@@ -717,21 +308,15 @@
                             <a href="tel:123456789">+1 234 567 8900</a>
                         </p>
                     </li>
-                    <li style="display: flex; margin-bottom: 16px">
-                        <span
-                            style="
-                                color: #fff;
-                                font-size: 20px;
-                                margin-right: 10px;
-                                padding-top: 10px;
-                            "
+                    <li>
+                        <span class="pt-10"                            "
                         >
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         </span>
                         <p>
                             <a
                                 href="mailto:pupchessclub@gmail.com"
-                                style="color: #999; text-decoration: none"
+                                class="footer__mail-link"
                                 >pupchessclub@gmail.com</a
                             >
                         </p>
