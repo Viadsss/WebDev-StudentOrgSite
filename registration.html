@@ -23,48 +23,8 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-
+        <link rel="stylesheet" href="styles.css" />
         <style>
-            body {
-                margin: 0;
-            }
-
-            header {
-                position: fixed;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: white;
-                top: 0;
-                left: 0;
-                width: 100%;
-                padding: 20px;
-                z-index: 10;
-            }
-            nav {
-                display: flex;
-                padding-right: 100px;
-                padding-left: 100px;
-                padding-top: 10px;
-            }
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-                display: flex;
-                gap: 15px;
-                font-weight: 600;
-                font-size: 1.2rem;
-            }
-            nav ul li {
-                display: inline;
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-            header a,
-            footer a {
-                color: white;
-                text-decoration: none;
-            }
             main section {
                 max-width: 1100;
                 margin-left: 200px;
@@ -75,7 +35,7 @@
                 font-size: 1rem;
                 padding-left: 5px;
             }
-            main section input {
+            .input {
                 display: flex;
                 flex-wrap: wrap;
                 width: 510px;
@@ -84,111 +44,35 @@
                 padding: 10px;
                 background-color: rgb(247, 246, 246);
             }
-
-            footer {
-                padding: 80px 13% 70px;
-            }
-
-            .footer {
-                display: grid;
-                grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
-                gap: 1rem;
-                background: #202020;
-                margin-top: auto;
+            #submit-button {
+                color: black;
+                background-color: #e0a642;
+                align-self: flex-start;
+                padding: 10px 15px;
+                border-radius: 8px;
+                margin-left: 200px;
+                margin-top: 20px;
+                font-weight: 800;
                 text-decoration: none;
-                list-style: none;
+                font-size: 1.3rem;
             }
-
-            .footer-content h4 {
-                color: #fff;
-                margin-bottom: 1.5rem;
-                font-size: 20px;
-            }
-
-            .footer-content li {
-                margin-bottom: 16px;
-            }
-
-            .footer-content li a {
-                display: block;
-                color: #999;
-                font-size: 15px;
-                font-weight: 400;
-                transition: all 0.4s ease;
-            }
-
-            .footer-content li a:hover {
-                transform: translateY(-3px) translate(-5px);
-                color: #e0a642;
-            }
-
-            .icons a {
-                display: inline-block;
-                font-size: 22px;
-                color: #fff;
-                margin-right: 17px;
-                transition: all 0.4s ease;
-            }
-
-            .icons a:hover {
-                color: #e0a642;
-                transform: translateY(-5px);
-            }
-
-            .copyrightText {
-                width: 100%;
-                background: #181818;
-                padding: 8px 0;
-                text-align: center;
-                color: #999;
-            }
-
-            @media (max-width: 1024px) {
-                section {
-                    padding: 50px 8%;
-                }
-
-                .footer {
-                    display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                    gap: 1rem;
-                    text-align: center;
-                }
-
-                .footer-content {
-                    text-align: center;
-                }
-
-                .footer-content h4 {
-                    font-size: 18px;
-                }
-
-                .footer-content li a {
-                    font-size: 14px;
-                }
-
-                .icons a {
-                    font-size: 20px;
-                }
+            #submit-button:hover {
+                color: white;
             }
         </style>
     </head>
-    <body style="font-family: 'Open Sans'; background-color: black">
-        <header style="background-color: #202020; height: 60px">
-            <div style="display: flex; padding: 50px; margin-top: 8px">
+    <body>
+        <header id="header">
+            <div class="brand">
                 <img
                     src="assets/imgs/chess-logo-icon.png"
                     alt="page logo icon"
                     width="100"
                     height="100"
                 />
-                <div style="padding-left: 10px">
-                    <p style="margin-bottom: 0%">
-                        Polytechnic University of the Philippines
-                    </p>
-                    <h1 style="font-weight: 1000; margin-top: 0%">
-                        CHESS CLUB
-                    </h1>
+                <div class="brand__name">
+                    <p>Polytechnic University of the Philippines</p>
+                    <h1>CHESS CLUB</h1>
                 </div>
             </div>
             <nav>
@@ -227,6 +111,7 @@
                 style="
                     max-width: 1100px;
                     margin-left: 200px;
+                    margin-right:200px;
                     text-indent: 50px;
                     padding-bottom: 30px;
                 "
@@ -237,54 +122,41 @@
                 tacticians.
             </p>
 
-            <section>
+            <section id="regitration-form">
                 <p>First Name</p>
-                <input type="text" placeholder="Enter First name (Ex. Juan)" />
+                <input class="input"
+                    type="text" 
+                    placeholder="Enter First name (Ex. Juan)" />
 
                 <p>Middle Name (NOT MIDDLE INITIAL) <i>if applicable</i></p>
-                <input
+                <input class="input"
                     type="text"
                     placeholder="Enter Middle name (Ex. Santos)"
                 />
 
                 <p>Last Name</p>
-                <input
+                <input class="input"
                     type="text"
                     placeholder="Enter Last name (Ex. Dela Cruz)"
                 />
 
                 <p>Student Number</p>
-                <input
+                <input class="input"
                     type="text"
                     placeholder="Enter Student Number (Ex. 20XX-XXXXX-MN-0)"
                 />
 
                 <p>Contact Number</p>
-                <input
+                <input class="input"
                     type="text"
                     placeholder="Enter Contact Number (Ex. 09XX XXX XXXX)"
                 />
             </section>
 
-            <a
+            <a id="submit-button"
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                style="
-                    color: black;
-                    background-color: #e0a642;
-                    align-self: flex-start;
-                    padding: 10px 15px;
-                    border-radius: 8px;
-                    margin-left: 200px;
-                    margin-top: 20px;
-                    font-weight: 800;
-                    text-decoration: none;
-                    font-size: 1.3rem;
-                "
                 >Submit
             </a>
-            <br />
-            <br />
-            <br />
         </main>
 
         <footer class="footer">
