@@ -69,6 +69,7 @@ footer {
     flex: 1.5;
 }
 
+
 .footer-content h4 {
     color: #fff;
     margin-bottom: 1.5rem;
@@ -402,10 +403,24 @@ footer {
 .footer-brand__text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center; 
     color: #fff;
     margin-top: -20px;
-    margin-right: 20px;
+    margin-right: 0; 
+}
+
+.footer-brand a{
+    margin-top: 25px;
+}
+
+.footer-brand__text p1{
+    margin-top: 50px;
+}
+
+.footer-brand__text h1{
+    margin-right: 110px;
+    margin-top: 5px;
 }
 
 .footer-phrase {

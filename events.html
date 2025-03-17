@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Events | PUP Chess Club</title>
         <link
             rel="icon"
-            href=assets/imgs/chess-logo-icon.png"
+            href="assets/imgs/chess-logo-icon.png"
             type="image/png"
         />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,191 +21,57 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
         <style>
-            header {
-                position: fixed;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                color: white;
-                top: 0;
-                left: 0;
-                width: 100%;
-                padding: 20px;
-                z-index: 10;
-            }
-            nav {
-                display: flex;
-                padding-right: 100px;
-                padding-left: 100px;
-                padding-top: 10px;
-            }
-            nav ul {
-                list-style-type: none;
-                padding: 0;
-                display: flex;
-                gap: 15px;
-                font-weight: 600;
-                font-size: 1.2rem;
-            }
-            nav ul li {
-                display: inline;
-                padding-left: 30px;
-                padding-right: 30px;
-            }
-            header a,
-            footer a {
-                color: white;
-                text-decoration: none;
-            }
-            main {
-                margin-top: 100px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .top-card {
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                margin-top: 50px;
-            }
-            .card {
-                background-color: #202020;
-                padding: 20px;
-                border-radius: 10px;
-                margin: 10px;
-                width: 38%;
-                height: 550px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                transition: transform 0.3s ease;
-            }
-            .card img {
-                width: 100%;
-                height: auto;
-                max-height: 250px;
-                object-fit: cover;
-                border-radius: 10px;
-                margin-top: 20px;
-            }
-            .card:hover {
-                background-color: #303030;
-                transform: scale(1.05);
-            }
-            .event-details {
-                display: flex;
-                justify-content: space-between;
-                width: 100%;
-                margin-top: 10px;
-            }
-            .event-details .date,
-            .event-details .location {
-                background-color: #303030;
-                padding: 10px;
-                border-radius: 10px;
-                color: white;
-                width: 45%;
-                text-align: center;
-            }
-            .event-details .date {
-                background-color: #744e0c;
-            }
-            .event-details .location {
-                background-color: #353534;
-            }
-
-            footer {
-                padding: 80px 13% 70px;
-            }
-
-            .footer {
-                display: grid;
-                grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
-                gap: 1rem;
-                background: #202020;
-                margin-top: auto;
-                text-decoration: none;
-                list-style: none;
-            }
-
-            .footer-content h4 {
-                color: #fff;
-                margin-bottom: 1.5rem;
-                font-size: 20px;
-            }
-
-            .footer-content li {
-                margin-bottom: 16px;
-            }
-
-            .footer-content li a {
-                display: block;
-                color: #999;
-                font-size: 15px;
-                font-weight: 400;
-                transition: all 0.4s ease;
-            }
-
-            .footer-content li a:hover {
-                transform: translateY(-3px) translate(-5px);
-                color: #e0a642;
-            }
-
-            .icons a {
-                display: inline-block;
-                font-size: 22px;
-                color: #fff;
-                margin-right: 17px;
-                transition: all 0.4s ease;
-            }
-
-            .icons a:hover {
-                color: #e0a642;
-                transform: translateY(-5px);
-            }
-
-            .copyrightText {
-                width: 100%;
-                background: #181818;
-                padding: 8px 0;
-                text-align: center;
-                color: #999;
-            }
-
             @media (max-width: 1024px) {
                 section {
                     padding: 50px 8%;
                 }
-
+        
                 .footer {
                     display: grid;
                     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
                     gap: 1rem;
                     text-align: center;
                 }
-
+        
                 .footer-content {
                     text-align: center;
                 }
-
+        
                 .footer-content h4 {
                     font-size: 18px;
-                }
-
+                }s
+        
                 .footer-content li a {
                     font-size: 14px;
                 }
-
+        
                 .icons a {
                     font-size: 20px;
                 }
             }
         </style>
+        
+        
     </head>
+
     <body style="font-family: 'Open Sans'; background-color: black">
+        
         <!-- Header -->
-        <header style="background-color: #202020; height: 60px">
+        <header 
+        style="             
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        z-index: 10;
+        background-color: #202020; 
+        height: 60px">
+
             <div
                 style="
                     display: flex;
@@ -228,18 +95,38 @@
                     </h1>
                 </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="registration.html">Register</a></li>
+            <nav 
+            style="
+                display: flex;
+                padding-right: 100px;
+                padding-left: 100px;
+                padding-top: 10px;
+            ">
+                <ul  
+                style="
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                gap: 15px;
+                font-weight: 600;
+                font-size: 1.2rem;">
+
+                    <li style="display: inline; padding-left: 30px; padding-right: 30px;"><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                    <li style="display: inline; padding-left: 30px; padding-right: 30px;"><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
+                    <li style="display: inline; padding-left: 30px; padding-right: 30px;"><a href="events.html" style="color: white; text-decoration: none;">Events</a></li>
+                    <li style="display: inline; padding-left: 30px; padding-right: 30px;"><a href="registration.html" style="color: white; text-decoration: none;">Register</a></li>
                 </ul>
             </nav>
         </header>
 
         <!-- Main Content -->
-        <main style="padding-bottom: 80px">
+        <main 
+        style="
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 80px">
             <h1
                 style="
                     color: #e0a642;
@@ -250,9 +137,31 @@
             >
                 Events
             </h1>
-            <div class="top-card">
+            <div class="top-card" 
+            style="
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 50px;">
+
                 <!-- Event #1 -->
-                <div class="card">
+                <div class="card" 
+
+                style="
+                background-color: #202020;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 10px;
+                width: 38%;
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: transform 0.3s ease;"
+                onmouseover="this.style.backgroundColor='#303030'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.backgroundColor='#202020'; this.style.transform='scale(1)';"
+                >
+
                     <h2 style="color: #e0a642">Annual Chess Tournament</h2>
                     <p style="color: white">
                         Join us for our highly anticipated Annual Chess
@@ -261,20 +170,70 @@
                         championship title. Test your skills, showcase your
                         strategy, and enjoy the spirit of friendly competition.
                     </p>
-                    <div class="event-details">
-                        <div class="date">March 20, 2025</div>
-                        <div class="location">
+                    <div class="event-details"
+
+                    style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 10px;">
+
+                        <div class="date"
+
+                        style="
+                        background-color: #744e0c;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: white;
+                        width: 45%;
+                        text-align: center;">
+
+                        March 20, 2025</div>
+
+                        <div class="location"
+
+                        style="
+                        background-color: #353534;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: white;
+                        width: 45%;
+                        text-align: center;">
+
                             Bulwagang Balagtas, 4/F NALLRC Bldg
                         </div>
                     </div>
-                    <img
+                    <img 
+                    style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 250px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-top: 20px;"
+
                         src="assets/imgs/events_1.jpg"
                         alt="event card image"
                     />
                 </div>
 
                 <!-- Event #2 -->
-                <div class="card">
+                <div class="card"
+
+                style="
+                background-color: #202020;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 10px;
+                width: 38%;
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: transform 0.3s ease;"
+                onmouseover="this.style.backgroundColor='#303030'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.backgroundColor='#202020'; this.style.transform='scale(1)';"
+                >
                     <h2 style="color: #e0a642">
                         Inter-University Chess Meetup
                     </h2>
@@ -285,20 +244,66 @@
                         games, share strategies, and build lasting connections
                         with the broader chess community.
                     </p>
-                    <div class="event-details">
-                        <div class="date">April 10, 2025</div>
-                        <div class="location">
+                    <div class="event-details"
+                    style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 10px;">
+                    
+                        <div class="date"
+                        style="
+                        background-color: #744e0c;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: white;
+                        width: 45%;
+                        text-align: center;">
+                        
+                        April 10, 2025</div>
+
+                        <div class="location"
+                        style="
+                        background-color: #353534;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: white;
+                        width: 45%;
+                        text-align: center;">
                             Bulwagang Balagtas, 4/F NALLRC Bldg
                         </div>
+
                     </div>
-                    <img
+                    <img 
+                    style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 250px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-top: 20px;"
+
                         src="assets/imgs/events_2.jpg"
                         alt="event card image"
                     />
                 </div>
 
                 <!-- Event #3 -->
-                <div class="card">
+                <div class="card"
+                style="
+                background-color: #202020;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 10px;
+                width: 38%;
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: transform 0.3s ease;"
+                onmouseover="this.style.backgroundColor='#303030'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.backgroundColor='#202020'; this.style.transform='scale(1)';">
+
                     <h2 style="color: #e0a642">Strategy & Tactics Workshop</h2>
                     <p style="color: white">
                         Sharpen your game at our Strategy & Tactics Workshop!
@@ -307,20 +312,64 @@
                         tactical patterns to elevate your chess skills to the
                         next level. Open to players of all levels.
                     </p>
-                    <div class="event-details">
-                        <div class="date">May 5, 2025</div>
-                        <div class="location">
+                    <div class="event-details"
+                    style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 10px;">
+
+                        <div class="date"
+                        style="
+                        background-color: #744e0c;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: white;
+                        width: 45%;
+                        text-align: center;">
+                        May 5, 2025</div>
+
+                        <div class="location"
+                        style="
+                        background-color: #353534;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: white;
+                        width: 45%;
+                        text-align: center;">
                             Bulwagang Balagtas, 4/F NALLRC Bldg
                         </div>
                     </div>
                     <img
+                    style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 250px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-top: 20px;"
+
                         src="assets/imgs/events_3.jpg"
                         alt="event card image"
                     />
                 </div>
 
                 <!-- Event #4 -->
-                <div class="card">
+                <div class="card"
+                style="
+                background-color: #202020;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 10px;
+                width: 38%;
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: transform 0.3s ease;"
+                onmouseover="this.style.backgroundColor='#303030'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.backgroundColor='#202020'; this.style.transform='scale(1)';">
+
                     <h2 style="color: #e0a642">Blitz Chess Challenge</h2>
                     <p style="color: white">
                         Experience the thrill of fast-paced chess at our Blitz
@@ -329,20 +378,64 @@
                         adaptability. Open to all players looking for an
                         exciting challenge.
                     </p>
-                    <div class="event-details">
-                        <div class="date">June 15, 2025</div>
-                        <div class="location">
+                    <div class="event-details"
+                    style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 10px;">
+
+                        <div class="date"
+                        style="
+                        background-color: #744e0c;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: white;
+                        width: 45%;
+                        text-align: center;">
+                        June 15, 2025</div>
+
+                        <div class="location"
+                        style="
+                        background-color: #353534;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: white;
+                        width: 45%;
+                        text-align: center;">
                             Bulwagang Balagtas, 4/F NALLRC Bldg
                         </div>
                     </div>
                     <img
+                    style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 250px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-top: 20px;"
+
                         src="assets/imgs/events_4.jpg"
                         alt="event card image"
                     />
                 </div>
 
                 <!-- Event #5 -->
-                <div class="card">
+                <div class="card"
+                style="
+                background-color: #202020;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 10px;
+                width: 38%;
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: transform 0.3s ease;"
+                onmouseover="this.style.backgroundColor='#303030'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.backgroundColor='#202020'; this.style.transform='scale(1)';">
+
                     <h2 style="color: #e0a642">Chess Simul Exhibition</h2>
                     <p style="color: white">
                         Challenge a master player in our Chess Simul Exhibition!
@@ -350,20 +443,64 @@
                         multiple opponents simultaneously. Test your skills and
                         see how you measure up against a seasoned competitor.
                     </p>
-                    <div class="event-details">
-                        <div class="date">July 25, 2025</div>
-                        <div class="location">
+                    <div class="event-details"
+                    style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 10px;">
+
+                        <div class="date"
+                        style="
+                        background-color: #744e0c;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: white;
+                        width: 45%;
+                        text-align: center;">
+                        July 25, 2025</div>
+
+                        <div class="location"
+                        style="
+                        background-color: #353534;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: white;
+                        width: 45%;
+                        text-align: center;">
                             Bulwagang Balagtas, 4/F NALLRC Bldg
                         </div>
                     </div>
                     <img
+                    style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 250px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-top: 20px;"
+
                         src="assets/imgs/events_5.jpg"
                         alt="event card image"
                     />
                 </div>
 
                 <!-- Event #6 -->
-                <div class="card">
+                <div class="card"
+                style="
+                background-color: #202020;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 10px;
+                width: 38%;
+                height: 550px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: transform 0.3s ease;"
+                onmouseover="this.style.backgroundColor='#303030'; this.style.transform='scale(1.05)';"
+                onmouseout="this.style.backgroundColor='#202020'; this.style.transform='scale(1)';">
+
                     <h2 style="color: #e0a642">Chess and Coffee Night</h2>
                     <p style="color: white">
                         Unwind and play some casual chess at our Chess and
@@ -372,13 +509,43 @@
                         perfect setting to exchange strategies and make new
                         friends.
                     </p>
-                    <div class="event-details">
-                        <div class="date">Every Friday Night</div>
-                        <div class="location">
+                    <div class="event-details"
+                    style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 10px;">
+
+                        <div class="date"
+                        style="
+                        background-color: #744e0c;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: white;
+                        width: 45%;
+                        text-align: center;">
+                        Every Friday Night</div>
+
+                        <div class="location"
+                        style="
+                        background-color: #353534;
+                        padding: 10px;
+                        border-radius: 10px;
+                        color: white;
+                        width: 45%;
+                        text-align: center;">
                             Bulwagang Balagtas, 4/F NALLRC Bldg
                         </div>
                     </div>
                     <img
+                    style="
+                    width: 100%;
+                    height: auto;
+                    max-height: 250px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    margin-top: 20px;"
+
                         src="assets/imgs/events_6.jpg"
                         alt="event card image"
                     />
@@ -386,7 +553,17 @@
             </div>
         </main>
 
-        <footer class="footer">
+        <footer class="footer" 
+        style="
+        padding: 80px 13% 70px;
+        display: grid;
+        grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
+        gap: 1rem;
+        background: #202020;
+        margin-top: auto;
+        text-decoration: none;
+        list-style: none;">
+
             <div
                 class="footer-content"
                 style="
@@ -404,7 +581,7 @@
                             style="
                                 width: 100px;
                                 height: 100px;
-                                margin-top: -20px;
+                                margin-top: 5px;
                             "
                         />
                     </a>
@@ -420,8 +597,8 @@
                             margin-right: 20px;
                         "
                     >
-                        <p1>Polytechnic University of the Philippines</p1>
-                        <h1>CHESS CLUB</h1>
+                        <p1 style="margin-top: 50px">Polytechnic University of the Philippines</p1>
+                        <h1 style="margin-top: 0;">CHESS CLUB</h1>
                     </div>
                 </div>
 
@@ -439,17 +616,54 @@
                     the love of chess through competitions and training,
                 </p>
 
+                
+
                 <div class="icons">
-                    <a href="https://www.facebook.com"
+                    <a href="https://www.facebook.com" 
+                    style="
+                    display: inline-block;
+                    font-size: 22px;
+                    color: #fff;
+                    margin-right: 17px;
+                    transition: all 0.4s ease;"
+                    onmouseover="this.style.color='#e0a642'; this.style.transform='translateY(-5px)';"
+                    onmouseout="this.style.color='#fff'; this.style.transform='translateY(0)';"
                         ><i class="fa fa-facebook" aria-hidden="true"></i
                     ></a>
+
                     <a href="https://www.x.com"
+                    style="
+                    display: inline-block;
+                    font-size: 22px;
+                    color: #fff;
+                    margin-right: 17px;
+                    transition: all 0.4s ease;"
+                    onmouseover="this.style.color='#e0a642'; this.style.transform='translateY(-5px)';"
+                    onmouseout="this.style.color='#fff'; this.style.transform='translateY(0)';"
                         ><i class="fa fa-twitter" aria-hidden="true"></i
                     ></a>
+
                     <a href="https://www.instagram.com"
+                    style="
+                    display: inline-block;
+                    font-size: 22px;
+                    color: #fff;
+                    margin-right: 17px;
+                    transition: all 0.4s ease;"
+                    onmouseover="this.style.color='#e0a642'; this.style.transform='translateY(-5px)';"
+                    onmouseout="this.style.color='#fff'; this.style.transform='translateY(0)';"
                         ><i class="fa fa-instagram" aria-hidden="true"></i
                     ></a>
+
                     <a href="https://www.youtube.com"
+                    style="
+                    display: inline-block;
+                    font-size: 22px;
+                    color: #fff;
+                    margin-right: 17px;
+                    transition: all 0.4s ease;"
+                    onmouseover="this.style.color='#e0a642'; this.style.transform='translateY(-5px)';"
+                    onmouseout="this.style.color='#fff'; this.style.transform='translateY(0)';"
                         ><i class="fa fa-youtube-play" aria-hidden="true"></i
                     ></a>
                 </div>
@@ -459,30 +673,47 @@
                 class="footer-content"
                 style="margin-left: 40px; margin-right: 40px"
             >
-                <h4>Home</h4>
-                <li><a href="#">FAQs</a></li>
+                <h4 style="color: #fff; margin-bottom: 1.5rem; font-size: 20px;">Home</h4>
+                <li style="margin-bottom: 16px;"><a href="#" style="display: block; color: #999; font-size: 15px; font-weight: 400; transition: all 0.4s ease; text-decoration: none;"
+                    onmouseover="this.style.color='#e0a642'; this.style.transform='translateY(-3px) translateX(-5px)';"
+                    onmouseout="this.style.color='#999'; this.style.transform='translateY(0) translateX(0)';">FAQs</a></li>
             </div>
 
             <div class="footer-content">
-                <h4>About Us</h4>
-                <li><a href="#about">Mission</a></li>
-                <li><a href="#about">Vission</a></li>
-                <li><a href="#our-team">Team</a></li>
-                <li><a href="#awards">Awards</a></li>
+                <h4 style="color: #fff; margin-bottom: 1.5rem; font-size: 20px;">About Us</h4>
+                <li style="margin-bottom: 16px;"><a href="#about" style="display: block; color: #999; font-size: 15px; font-weight: 400; transition: all 0.4s ease; text-decoration: none;"
+                    onmouseover="this.style.color='#e0a642'; this.style.transform='translateY(-3px) translateX(-5px)';"
+                    onmouseout="this.style.color='#999'; this.style.transform='translateY(0) translateX(0)';">Mission</a></li>
+
+                <li style="margin-bottom: 16px;"><a href="#about" style="display: block; color: #999; font-size: 15px; font-weight: 400; transition: all 0.4s ease; text-decoration: none;"
+                    onmouseover="this.style.color='#e0a642'; this.style.transform='translateY(-3px) translateX(-5px)';"
+                    onmouseout="this.style.color='#999'; this.style.transform='translateY(0) translateX(0)';">Vission</a></li>
+
+                <li style="margin-bottom: 16px;"><a href="#our-team" style="display: block; color: #999; font-size: 15px; font-weight: 400; transition: all 0.4s ease; text-decoration: none;"
+                    onmouseover="this.style.color='#e0a642'; this.style.transform='translateY(-3px) translateX(-5px)';"
+                    onmouseout="this.style.color='#999'; this.style.transform='translateY(0) translateX(0)';">Team</a></li>
+
+                <li style="margin-bottom: 16px;"><a href="#awards" style="display: block; color: #999; font-size: 15px; font-weight: 400; transition: all 0.4s ease; text-decoration: none;"
+                    onmouseover="this.style.color='#e0a642'; this.style.transform='translateY(-3px) translateX(-5px)';"
+                    onmouseout="this.style.color='#999'; this.style.transform='translateY(0) translateX(0)';">Awards</a></li>
             </div>
 
             <div class="footer-content">
-                <h4>Projects</h4>
-                <li><a href="#">Events</a></li>
+                <h4 style="color: #fff; margin-bottom: 1.5rem; font-size: 20px; margin-left: 10px;">Projects</h4>
+                <li style="margin-bottom: 16px; margin-left: 10px;"><a href="#" style="display: block; color: #999; font-size: 15px; font-weight: 400; transition: all 0.4s ease; text-decoration: none;"
+                    onmouseover="this.style.color='#e0a642'; this.style.transform='translateY(-3px) translateX(-5px)';"
+                    onmouseout="this.style.color='#999'; this.style.transform='translateY(0) translateX(0)';">Events</a></li>
             </div>
 
             <div class="footer-content">
-                <h4>Join Us</h4>
-                <li><a href="#">Registration</a></li>
+                <h4 style="color: #fff; margin-bottom: 1.5rem; font-size: 20px; margin-left: 25px;">Join Us</h4>
+                <li style="margin-bottom: 16px; margin-left: 25px;"><a href="#" style="display: block; color: #999; font-size: 15px; font-weight: 400; transition: all 0.4s ease; text-decoration: none;"
+                    onmouseover="this.style.color='#e0a642'; this.style.transform='translateY(-3px) translateX(-5px)';"
+                    onmouseout="this.style.color='#999'; this.style.transform='translateY(0) translateX(0)';">Registration</a></li>
             </div>
 
             <div class="footer-content" style="flex: 2; margin-left: 80px">
-                <h4>Contact Us</h4>
+                <h4 style="color: #fff; margin-bottom: 1.5rem; font-size: 20px; margin-left: 40px">Contact Us</h4>
                 <ul class="contact" style="position: relative">
                     <li style="display: flex; margin-bottom: 16px">
                         <span
@@ -511,8 +742,8 @@
                             <i class="fa fa-phone" aria-hidden="true"></i>
                         </span>
                         <p>
-                            <a href="tel:123456789">+1 234 567 8900</a><br />
-                            <a href="tel:123456789">+1 234 567 8900</a>
+                            <a href="tel:123456789"  style="color: #999; text-decoration: none">+1 234 567 8900</a><br />
+                            <a href="tel:123456789"  style="color: #999; text-decoration: none">+1 234 567 8900</a>
                         </p>
                     </li>
                     <li style="display: flex; margin-bottom: 16px">
@@ -529,15 +760,21 @@
                         <p>
                             <a
                                 href="mailto:pupchessclub@gmail.com"
-                                style="color: #999; text-decoration: none"
+                                style="color: #999; text-decoration: none; display: block; color: #999; font-size: 15px; font-weight: 400; transition: all 0.4s ease;"
                                 >pupchessclub@gmail.com</a
                             >
                         </p>
                     </li>
-                </ul>
+                </ul>   
             </div>
         </footer>
-        <div class="copyrightText">
+        <div class="copyrightText" 
+        style="
+            width: 100%;
+            background: #181818;
+            padding: 8px 0;
+            text-align: center;
+            color: #999;">
             <p>Copyright © 2025 Chess Club. All Rights Reserved.</p>
         </div>
     </body>
